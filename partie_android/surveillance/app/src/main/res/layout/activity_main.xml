@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/Graph"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#0000FF"
+        android:layout_weight="100" >
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/layoutButt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="right">
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/tvBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Bluetooth"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="68dp"
+            android:orientation="horizontal"
+        android:background="@android:color/darker_gray">
+
+        <Button
+            android:id="@+id/bConnect"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="connecter"
+            android:textSize="10dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/bDisconnect"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:text="déconnecter"
+            android:textSize="10dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/darker_gray">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="              "
+                    android:textSize="15dp"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:id="@+id/bdchargement"
+                    android:layout_width="119dp"
+                    android:layout_height="38dp"
+                    android:text="charger"
+                    android:textSize="10dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="effacer"
+                android:id="@+id/effacer" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="432dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray">
+<!--
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="temps de réception"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_weight="0.41" />
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/barReg"
+                android:max="5"
+
+                android:layout_weight="0.61" /> -->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

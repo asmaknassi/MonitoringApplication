@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetectActivity"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/tvBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Bluetooth"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/bConnectCamera"
+            android:layout_width="143dp"
+            android:layout_height="59dp"
+            android:text="connecter"
+            android:textSize="10dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/bDisconnectCamera"
+            android:layout_width="141dp"
+            android:layout_height="match_parent"
+            android:text="déconnecter"
+            android:textSize="10dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

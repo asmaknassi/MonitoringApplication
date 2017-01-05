@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".DetectActivity">
+    <item android:id="@+id/gragh" android:title="Graphe"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/camera" android:title="caméra"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/listPhoto" android:title="liste des photos"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
